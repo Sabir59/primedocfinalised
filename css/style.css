@@ -1,26 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --black: #000;
+
+  /* Font Sizes */
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+
+  --font-size-heading-1: 40px;
+  --font-size-heading-2: 32px;
+  --font-size-heading-3: 28px;
+  --font-size-heading-4: 24px;
+  --font-size-heading-5: 22px;
+  --font-size-heading-6: 20px;
+
+  --font-size-display-1: 48px;
+  --font-size-display-2: 64px;
+  --font-size-display-3: 96px;
+  --font-size-display-4: 128px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
+.header {
+  height: 200px;
+}
+.header__main {
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
 
 /* Typography */
-.hero-heading {
-  color: #504b4b;
-  font-size: 40px;
-  font-weight: 500;
-}
-.hero-heading--important {
-  font-weight: 700;
-  color: #000;
-}
-.hero-text {
-  color: #7b7b7b;
-  font-size: 16px;
-  line-height: 171%;
-}
 
-/* Utils */
+/* Components */
 .u-bg-primary {
   background-color: #1d1662;
 }
@@ -38,14 +63,162 @@ body {
   color: white;
 }
 .u-btn-secondary {
-  border: 1px solid #1d1662;
-  background: #fff;
+  border: 1px solid transparent;
+  background: #1d16621a;
   color: #1d1662;
 }
 .u-focus-none:focus {
   outline: none;
   box-shadow: none;
   border: none;
+}
+.offer-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Define text color utility classes */
+.tx-white {
+  color: var(--white);
+}
+
+.tx-gray-100 {
+  color: var(--gray-100);
+}
+
+.tx-gray-200 {
+  color: var(--gray-200);
+}
+
+.tx-gray-300 {
+  color: var(--gray-300);
+}
+
+.tx-gray-400 {
+  color: var(--gray-400);
+}
+
+.tx-gray-500 {
+  color: var(--gray-500);
+}
+
+.tx-gray-600 {
+  color: var(--gray-600);
+}
+
+.tx-gray-700 {
+  color: var(--gray-700);
+}
+
+.tx-gray-800 {
+  color: var(--gray-800);
+}
+
+.tx-gray-900 {
+  color: var(--gray-900);
+}
+
+.tx-black {
+  background-color: var(--black);
+}
+.bgd-white {
+  background-color: var(--white);
+}
+
+.bgd-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.bgd-gray-200 {
+  background-color: var(--gray-200);
+}
+
+.bgd-gray-300 {
+  background-color: var(--gray-300);
+}
+
+.bgd-gray-400 {
+  background-color: var(--gray-400);
+}
+
+.bgd-gray-500 {
+  background-color: var(--gray-500);
+}
+
+.bgd-gray-600 {
+  background-color: var(--gray-600);
+}
+
+.bgd-gray-700 {
+  background-color: var(--gray-700);
+}
+
+.bgd-gray-800 {
+  background-color: var(--gray-800);
+}
+
+.bgd-gray-900 {
+  background-color: var(--gray-900);
+}
+
+.bgd-black {
+  background-color: var(--black);
+}
+
+/* Font Utilities */
+
+/* Define font size utility classes */
+.fsz-14 {
+  font-size: var(--font-size-14);
+}
+
+.fsz-16 {
+  font-size: var(--font-size-16);
+}
+
+.fsz-18 {
+  font-size: var(--font-size-18);
+}
+
+/* Heading font sizes */
+.fsz-h1 {
+  font-size: var(--font-size-heading-1);
+}
+
+.fsz-h2 {
+  font-size: var(--font-size-heading-2);
+}
+
+.fsz-h3 {
+  font-size: var(--font-size-heading-3);
+}
+
+.fsz-h4 {
+  font-size: var(--font-size-heading-4);
+}
+
+.fsz-h5 {
+  font-size: var(--font-size-heading-5);
+}
+
+.fsz-h6 {
+  font-size: var(--font-size-heading-6);
+}
+
+/* Display font sizes */
+.fsz-display-1 {
+  font-size: var(--font-size-display-1);
+}
+
+.fsz-display-2 {
+  font-size: var(--font-size-display-2);
+}
+
+.fsz-display-3 {
+  font-size: var(--font-size-display-3);
+}
+
+.fsz-display-4 {
+  font-size: var(--font-size-display-4);
 }
 
 /* Loader */

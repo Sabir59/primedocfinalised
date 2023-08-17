@@ -1,130 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prime Doc Billing</title>
-    <!-- External Style Sheet -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./css/vendors/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- Loader -->
-    <div
-      class="loader-container position-fixed w-100 h-100 u-bg-primary d-flex justify-content-center align-items-center"
-    >
-      <span class="loader"></span>
-      <span class="text-white">Loading...</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Doc Billing</title>
+  <!-- External Style Sheet -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/vendors/all.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div
+    class="loader-container position-fixed w-100 h-100 u-bg-primary d-flex justify-content-center align-items-center">
+    <span class="loader"></span>
+    <span class="text-white">Loading...</span>
+  </div>
+  <header class="header">
+    <!-- Sub Header -->
+    <div class="py-3 text-dark header__sub">
+      <div class="container-xl">
+        <div class="row justify-content-between align align-items-center">
+          <div class="col-auto d-flex gap-3">
+            <a href="" class="text-dark">
+              <i class="fab fa-facebook-square fsz-20 tx-gray-700"></i>
+            </a>
+            <a href="" class="text-dark">
+              <i class="fab fa-twitter-square fsz-20 tx-gray-700"></i>
+            </a>
+            <a href="" class="text-dark">
+              <i class="fab fa-linkedin fsz-20 tx-gray-700"></i>
+            </a>
+            <a href="" class="text-dark">
+              <i class="fab fa-instagram fsz-20 tx-gray-700"></i>
+            </a>
+          </div>
+          <div class="col-auto d-flex gap-4">
+            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 tx-gray-700">
+              <i class="fa fa-phone-square"></i>
+              +92-345-564-7654
+            </a>
+            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 tx-gray-700">
+              <i class="fa fa-envelope"></i>
+              primedocbilling@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <header class="header">
-      <!-- Sub Header -->
-      <div class="py-3 text-dark">
-        <div class="container-xxl">
-          <div class="row justify-content-between align align-items-center">
-            <div class="col-auto d-flex gap-3">
-              <a href="" class="text-dark">
-                <i class="fab fa-facebook-square fs-4"></i>
-              </a>
-              <a href="" class="text-dark">
-                <i class="fab fa-twitter-square fs-4"></i>
-              </a>
-              <a href="" class="text-dark">
-                <i class="fab fa-linkedin fs-4"></i>
-              </a>
-              <a href="" class="text-dark">
-                <i class="fab fa-instagram fs-4"></i>
-              </a>
-            </div>
-            <div class="col-auto d-flex gap-4">
-              <a href="" class="text-dark text-decoration-none">
-                <i class="fa fa-phone"></i>
-                +92-345-564-7654
-              </a>
-              <a href="" class="text-dark text-decoration-none">
-                <i class="fa fa-envelope"></i>
-                primedocbilling@gmail.com
-              </a>
-            </div>
+    <!-- Main Header -->
+    <div class="py-3 u-bg-primary header__main">
+      <div class="container-xl">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <form action="#" class="search-form d-flex align-items-center border-bottom">
+              <input type="email" class="form-control border-0 bg-transparent rounded-0 text-white u-focus-none"
+                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search" autocomplete="off" />
+              <i class="fa fa-search text-white"></i>
+            </form>
           </div>
-        </div>
-      </div>
-      <!-- Main Header -->
-      <div class="py-3 u-bg-primary position-sticky top-50">
-        <div class="container-xxl">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-auto">
-              <form action="#" class="search-form d-flex align-items-center border-bottom">
-                <input
-                  type="email"
-                  class="form-control border-0 bg-transparent rounded-0 text-white u-focus-none"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Search"
-                  autocomplete="off"
-                />
-                <i class="fa fa-search text-white"></i>
-              </form>
-            </div>
-            <div class="col-auto">
-              <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav d-flex gap-5">
-                      <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white disabled">FAQ's</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white disabled">Contact Us</a>
-                      </li>
-                    </ul>
-                  </div>
+          <div class="col-auto">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav d-flex gap-5">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white disabled">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white disabled">Contact Us</a>
+                    </li>
+                  </ul>
                 </div>
-              </nav>
-            </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
-    </header>
-    <!-- Hero Starts -->
-    <div class="container-xxl">
+    </div>
+  </header>
+  <!-- Hero Starts -->
+  <section class="hero">
+    <div class="container-xl">
       <div class="row align-items-center">
         <div class="col-lg-6 order-1 order-lg-0 d-flex flex-column gap-5">
           <div class="">
             <img src="./assets/images/logo.png" alt="Logo" class="my-5" />
-            <h1 class="hero-heading">
-              Help us find the <span class="hero-heading--important">missing puzzle</span>, get
-              <span class="hero-heading--important">rewarded</span> properly
+            <h1 class="fsz-h1">
+              Help us find the <span class="fw-bolder text-black">missing puzzle</span>, get
+              <span class="fw-bolder text-black">rewarded</span> properly
             </h1>
-            <p class="hero-text mt-4">
+            <p class="mt-4 tx-gray-700 fsz-16 lh-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industry's standard dummy text ever since the 1500s, when an unknown
               printer took a galley of type and scrambled it to make a type specimen book
@@ -140,43 +122,154 @@
         </div>
       </div>
     </div>
-    <!-- Hero Ends -->
-    <!-- Slider Starts -->
-    <div class="container-xxl mt-5">
-      <!-- <h2 class="text-capitalize text-center mb-5">trusted by</h2> -->
-      <div class="row justify-content-center align-items-center gap-5 testimonial-slider">
-        <div class="col-auto"><img src="./assets/images/pf.png" alt="logo" class="w-50" /></div>
-        <div class="col-auto"><img src="./assets/images/of.png" alt="logo" class="w-50" /></div>
-        <div class="col-auto"><img src="./assets/images/ng.png" alt="logo" class="w-50" /></div>
-        <div class="col-auto">
-          <img src="./assets/images/ECW-logo.jpeg" alt="logo" class="w-50" />
+  </section>
+  <!-- Hero Ends -->
+  <!-- Slider Starts -->
+  <div class="container-xl mt-5">
+    <!-- <h2 class="text-capitalize text-center mb-5">trusted by</h2> -->
+    <div class="row justify-content-center align-items-center gap-5 testimonial-slider">
+      <div class="col-auto"><img src="./assets/images/pf.png" alt="logo" class="w-50" /></div>
+      <div class="col-auto"><img src="./assets/images/of.png" alt="logo" class="w-50" /></div>
+      <div class="col-auto"><img src="./assets/images/ng.png" alt="logo" class="w-50" /></div>
+      <div class="col-auto">
+        <img src="./assets/images/ECW-logo.jpeg" alt="logo" class="w-50" />
+      </div>
+      <div class="col-auto"><img src="./assets/images/cmd.png" alt="logo" class="w-50" /></div>
+      <div class="col-auto"><img src="./assets/images/kareo.png" alt="logo" class="w-50" /></div>
+    </div>
+  </div>
+  <!-- Slider Ends -->
+  <section class="mt-5 bgd-gray-200">
+    <div class="py-5">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- <p class="badge bg-warning text-capitalize fsz-14 fw-light">who we are</p> -->
+            <div class="d-flex justify-content-center">
+              <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+          </div>
+          <div class="col-lg-12 text-center ">
+            <p class="tx-gray-700 mt-4 lh-lg">
+              Prime Doc Billing adopts a dynamic and exible approach for it's clients to cater their needs in a cost
+              ective
+              manner. Our variety of business model's help the client's to avail top quality services according to their
+              requirements and needs. We have extensive experience working with various practices and businesses to
+              provide cost-eective medical billing services. As an experienced medical billing company with
+              high-quality
+              and cost-ective resources, we oer complete RCM services through two dierent models
+            </p>
+          </div>
         </div>
-        <div class="col-auto"><img src="./assets/images/cmd.png" alt="logo" class="w-50" /></div>
-        <div class="col-auto"><img src="./assets/images/kareo.png" alt="logo" class="w-50" /></div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- About Starts -->
+  <section class="mt-5 ">
+    <div class=" py-5">
+      <div class="container-xl">
+        <div class="row">
+          <!-- <div class="col-lg-6 ">
+            <img
+              src="https://img.freepik.com/free-photo/man-talking-with-female-sales-person-car-show-room_1303-17096.jpg?w=1380&t=st=1692285820~exp=1692286420~hmac=9924e6860c2d4c7458599f52dd5d5485c78012055c0e757c7bc1f2e9f2ef722a"
+              alt="Photo" class="w-75">
+          </div> -->
+          <div class="col-lg-8 mx-auto">
+            <div class="d-flex  flex-column align-items-center ">
+              <p class="badge bg-warning text-capitalize fsz-14 fw-light">
+                our services to
+              </p>
+              <h2 class="text-capitalize fw-medium fsz-h1 text-center ">to whome we offer services</h2>
+            </div>
+            <p class="tx-gray-700 mt-4 lh-lg text-center ">
+              Prime Doc Billing adopts a dynamic and exible approach for it's clients to cater their needs in a cost
+              ective manner. Our variety of business model's help the client's to avail top quality services according
+              to their
+              requirements.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-md-7 mx-auto ">
+            <img src="./assets/images/our_offer.png" alt="" class="w-100">
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Slider Ends -->
-    <!-- External Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/vendors/all.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+  </section>
+  <!-- About Ends -->
+
+  <section class="mt-5 ">
+    <div class=" py-5">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="d-flex  flex-column align-items-center ">
+              <p class="badge bg-warning text-capitalize fsz-14 fw-light">business modal
+              </p>
+              <h2 class="text-capitalize fw-medium fsz-h1 text-center ">our business modal</h2>
+            </div>
+            <p class="tx-gray-700 mt-4 lh-lg text-center ">
+              Prime Doc Billing adopts a dynamic and exible approach for it's clients to cater their needs in a cost
+              ective manner. Our variety of business model's help the client's to avail top quality services according
+              to their
+              requirements and needs. We have extensive experience working with various practices and businesses to
+              provide cost-eective medical billing services. As an experienced medical billing company with
+              high-quality
+              and cost-ective resources, we oer complete RCM services through two dierent models
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-xl">
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <img src="./assets/images/business_modal.png" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="mb-5">
+            <h3 class="fsz-18 text-uppercase mb-3">
+              Percentage Modal
+            </h3>
+            <p class="tx-gray-700 lh-lg fsz-14">
+              Certain Percentage against the monthly collections & Customized Packages
+              according to the client needs.
+            </p>
+          </div>
+          <div class="mb-5">
+            <h3 class="fsz-18 text-uppercase  mb-3 ">
+              employee outsourcing on hourly rates as FTE & PTE
+            </h3>
+            <p class="tx-gray-700 lh-lg fsz-14">
+              In our employee outsourcing, we offer resources that can effeciently handle the following tasks: Billing
+              and
+              Coding, VOBs, Authorization, Front Desk, Patient Calls, Patient Scheduling, AR & Denial Management,
+              Scribing as
+              well as any other job the client may assign. This assists you in managing the expenses related to
+              arranging
+              resources, equipment, infrastructure, and other facilities
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- External Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/vendors/all.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

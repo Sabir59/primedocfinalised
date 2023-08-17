@@ -18,4 +18,24 @@ $(document).ready(function () {
   $(".loader-container").fadeOut("slow", function () {
     $(this).remove();
   });
+
+  $(window).on("load resize scroll", function () {
+    updateBackgroundPosition();
+  });
+
+  function updateBackgroundPosition() {
+    const headerHeight = $(".header__sub").outerHeight();
+    const mainElement = $(".header__main");
+    const scrollY = $(window).scrollTop();
+
+    if (scrollY >= headerHeight) {
+      mainElement.css({
+        position: "fixed",
+      });
+    } else {
+      mainElement.css({
+        position: "static",
+      });
+    }
+  }
 });
