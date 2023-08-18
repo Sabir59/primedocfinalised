@@ -15,10 +15,11 @@ $(document).ready(function () {
   });
 
   //   Loader Removal
+  // setTimeout(() => {
   $(".loader-container").fadeOut("slow", function () {
     $(this).remove();
   });
-
+  // }, 500);
   $(window).on("load resize scroll", function () {
     updateBackgroundPosition();
   });
@@ -38,4 +39,15 @@ $(document).ready(function () {
       });
     }
   }
+
+  // Mobile Navigation
+  $(".mobile-navigation__open").on("click", function () {
+    $(".mobile-navigation").addClass("u-trans-none");
+  });
+  $(".mobile-navigation__close").on("click", function () {
+    $(".mobile-navigation").removeClass("u-trans-none");
+  });
+  $(".search-form-icon").on("click", function () {
+    $(".search-form").toggleClass("expanded");
+  });
 });

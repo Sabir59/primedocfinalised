@@ -13,6 +13,89 @@
 </head>
 
 <body>
+  <div class="mobile-navigation u-bg-primary h-100">
+    <span class="mobile-navigation__close">
+      <i class="fa fa-close"></i>
+    </span>
+
+    <div class="mobile-navigation__content d-flex flex-column justify-content-between h-100 p-4">
+
+      <ul class="list-unstyled">
+        <li class="mb-3 w-75 d-flex gap-3">
+          <form action="#" class="search-form d-flex align-items-center border-bottom">
+            <input type="email" class="form-control border-0 bg-transparent rounded-0 text-white u-focus-none"
+              id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search" autocomplete="off" />
+            <i class="fa fa-search text-white"></i>
+          </form>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            home
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            about us
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            services
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            FAQ's
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            contact us
+          </a>
+        </li>
+
+      </ul>
+      <ul class="list-unstyled">
+
+        <li class="mb-3 w-75 d-flex gap-3">
+          <span>
+            <i class="fa fa-phone text-white fsz-14"></i>
+          </span>
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            347-650-2656
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+          <span>
+            <i class="fa fa-envelope text-white fsz-14"></i>
+          </span>
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            info@primedocbilling.com
+          </a>
+        </li>
+        <li class="mb-3 w-75 d-flex gap-3">
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            <i class="fab fa-facebook-square text-white fsz-14"></i>
+          </a>
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            <i class="fab fa-twitter-square text-white fsz-14"></i>
+          </a>
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            <i class="fab fa-linkedin text-white fsz-14"></i>
+          </a>
+          <a href="#" class="text-decoration-none fw-light text-white fsz-14 text-capitalize">
+            <i class="fab fa-instagram text-white fsz-14"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
   <!-- Loader -->
   <div
     class="loader-container position-fixed w-100 h-100 u-bg-primary d-flex justify-content-center align-items-center">
@@ -21,29 +104,29 @@
   </div>
   <header class="header">
     <!-- Sub Header -->
-    <div class="py-3 text-dark header__sub">
-      <div class="container-xl">
+    <div class="py-3 u-bg-primary header__sub d-none d-md-block">
+      <div class="container">
         <div class="row justify-content-between align align-items-center">
           <div class="col-auto d-flex gap-3">
-            <a href="" class="text-dark">
-              <i class="fab fa-facebook-square fsz-20 tx-gray-700"></i>
+            <a href="#">
+              <i class="fab fa-facebook-square fsz-20 tx-white"></i>
             </a>
-            <a href="" class="text-dark">
-              <i class="fab fa-twitter-square fsz-20 tx-gray-700"></i>
+            <a href="#">
+              <i class="fab fa-twitter-square fsz-20 tx-white"></i>
             </a>
-            <a href="" class="text-dark">
-              <i class="fab fa-linkedin fsz-20 tx-gray-700"></i>
+            <a href="#">
+              <i class="fab fa-linkedin fsz-20 tx-white"></i>
             </a>
-            <a href="" class="text-dark">
-              <i class="fab fa-instagram fsz-20 tx-gray-700"></i>
+            <a href="#">
+              <i class="fab fa-instagram fsz-20 tx-white"></i>
             </a>
           </div>
           <div class="col-auto d-flex gap-4">
-            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 tx-gray-700">
+            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 text-white">
               <i class="fa fa-phone-square"></i>
               +92-345-564-7654
             </a>
-            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 tx-gray-700">
+            <a href="" class="text-decoration-none d-flex align-items-center gap-2 fsz-14 text-white">
               <i class="fa fa-envelope"></i>
               primedocbilling@gmail.com
             </a>
@@ -52,42 +135,52 @@
       </div>
     </div>
     <!-- Main Header -->
-    <div class="py-3 u-bg-primary header__main">
-      <div class="container-xl">
+    <div class="py-3 header__main border-bottom bg-white">
+      <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-auto">
-            <form action="#" class="search-form d-flex align-items-center border-bottom">
-              <input type="email" class="form-control border-0 bg-transparent rounded-0 text-white u-focus-none"
-                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search" autocomplete="off" />
-              <i class="fa fa-search text-white"></i>
-            </form>
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </div>
+          <div class="col-auto flex-grow-1 d-flex justify-content-end d-lg-none">
+            <i class="fa fa-bars mobile-navigation__open"></i>
           </div>
           <div class="col-auto">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg d-none d-lg-block">
               <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav d-flex gap-5">
+                  <ul class="navbar-nav d-flex align-items-center gap-lg-4 gap-xl-5">
                     <li class="nav-item">
-                      <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                      <a class="nav-link tx-gray-900" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="#">About Us</a>
+                      <a class="nav-link tx-gray-900" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Services</a>
+                      <a class="nav-link tx-gray-900" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white disabled">FAQ's</a>
+                      <a class="nav-link tx-gray-900">FAQ's</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white disabled">Contact Us</a>
+                      <a class="nav-link tx-gray-900">Contact Us</a>
+                    </li>
+                    <li class="nav-item search-form">
+                      <form action="#" class="align-items-center border-bottom">
+                        <input type="email" class="form-control border-0 bg-transparent rounded-0 u-focus-none"
+                          id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search"
+                          autocomplete="off" />
+                      </form>
+                    </li>
+                    <li class="nav-item search-form-container">
+                      <i class="fa fa-search search-form-icon"></i>
                     </li>
                   </ul>
                 </div>
+
               </div>
             </nav>
           </div>
@@ -97,11 +190,10 @@
   </header>
   <!-- Hero Starts -->
   <section class="hero">
-    <div class="container-xl">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-1 order-lg-0 d-flex flex-column gap-5">
+    <div class="container">
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-6 order-1 order-lg-0 d-flex flex-column gap-5 mt-4 mt-lg-0">
           <div class="">
-            <img src="./assets/images/logo.png" alt="Logo" class="my-5" />
             <h1 class="fsz-h1">
               Help us find the <span class="fw-bolder text-black">missing puzzle</span>, get
               <span class="fw-bolder text-black">rewarded</span> properly
@@ -117,7 +209,7 @@
             <button class="u-btn u-btn-secondary">Request a free practice analysis</button>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-5 mt-lg-0">
           <img src="./assets/images/hero_photo.png" alt="Photo" class="w-100" />
         </div>
       </div>
@@ -125,7 +217,7 @@
   </section>
   <!-- Hero Ends -->
   <!-- Slider Starts -->
-  <div class="container-xl mt-5">
+  <div class="container mt-5">
     <!-- <h2 class="text-capitalize text-center mb-5">trusted by</h2> -->
     <div class="row justify-content-center align-items-center gap-5 testimonial-slider">
       <div class="col-auto"><img src="./assets/images/pf.png" alt="logo" class="w-50" /></div>
@@ -138,10 +230,10 @@
       <div class="col-auto"><img src="./assets/images/kareo.png" alt="logo" class="w-50" /></div>
     </div>
   </div>
-  <!-- Slider Ends -->
+  <!-- About Section -->
   <section class="mt-5 bgd-gray-200">
     <div class="py-5">
-      <div class="container-xl">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <!-- <p class="badge bg-warning text-capitalize fsz-14 fw-light">who we are</p> -->
@@ -166,10 +258,10 @@
     </div>
 
   </section>
-  <!-- About Starts -->
+  <!-- Services Offer -->
   <section class="mt-5 ">
     <div class=" py-5">
-      <div class="container-xl">
+      <div class="container">
         <div class="row">
           <!-- <div class="col-lg-6 ">
             <img
@@ -199,11 +291,10 @@
       </div>
     </div>
   </section>
-  <!-- About Ends -->
-
+  <!-- Business Modal -->
   <section class="mt-5 ">
     <div class=" py-5">
-      <div class="container-xl">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <div class="d-flex  flex-column align-items-center ">
@@ -225,10 +316,10 @@
       </div>
 
     </div>
-    <div class="container-xl">
+    <div class="container">
       <div class="row mt-5">
-        <div class="col-md-6">
-          <img src="./assets/images/business_modal.png" alt="">
+        <div class="col-md-6 mb-5 mb-md-0 d-flex justify-content-center align-items-center">
+          <img src="./assets/images/business_modal.png" alt="Photo">
         </div>
         <div class="col-md-6">
           <div class="mb-5">
@@ -258,6 +349,540 @@
       </div>
     </div>
   </section>
+  <!-- Outsourcing -->
+  <section class="mt-5 bgd-gray-200">
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="d-flex  flex-column align-items-center ">
+              <p class="badge bg-warning text-capitalize fsz-14 fw-light">outsourcing medical billing operations
+              </p>
+              <h2 class="text-capitalize fw-medium fsz-h1 text-center ">benefits of outsourcing medical billing
+                operations</h2>
+            </div>
+            <p class="tx-gray-700 mt-4 lh-lg text-center ">
+              The under-mentioned reasons can justify the need of outsourcing medical billing operations to scale
+              up your practice
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row py-5 g-5">
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">01</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                reduce cost
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">02</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                focus on patient care
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">03</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                boosting revenue
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">04</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                team of experts
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">05</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                minimize your administrative workload
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <!-- Card -->
+          <div class="outsourcing-card p-4 border h-100">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/icon_cost.png" alt="Icon" class="outsourcing-card__icon">
+              <p class="outsourcing-card__number fw-bold fsz-h3 tx-gray-700">06</p>
+            </div>
+            <div class="">
+              <h5 class="text-capitalize">
+                transparency & reporting
+              </h5>
+              <p class="lh-lg">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, quis tempora itaque at adipisci
+                maxime aut corporis esse nulla mollitia optio neque
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="mt-5 ">
+    <div class=" py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="d-flex  flex-column align-items-center ">
+              <p class="badge bg-warning text-capitalize fsz-14 fw-light">our services
+              </p>
+              <h2 class="text-capitalize fw-medium fsz-h1 text-center ">services we provide</h2>
+            </div>
+            <p class="tx-gray-700 mt-4 lh-lg text-center ">
+              The under-mentioned reasons can justify the need of outsourcing medical billing operations to scale
+              up your practice
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <!-- Card -->
+          <div class="service-card p-4 h-100 ">
+            <div class="d-inline-flex flex-column align-items-center gap-3">
+              <img src="./assets/images/img_services.png" alt="Icon" class="mb-5">
+            </div>
+            <h5 class="fsz-h5 fw-bold text-capitalize mb-3">
+              medical billing & coding
+            </h5>
+            <p class="fsz-14 tx-gray-700 lh-lg">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente,
+              quis tempora itaque at adipisci
+            </p>
+            <a href="#" class="btn-readmore tx-gray-700 text-decoration-none">
+              read more
+              <img src="./assets/images/icon_readmore.png" alt="read more">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ's -->
+  <section class="mt-5 ">
+    <div class=" py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="d-flex  flex-column align-items-center ">
+              <p class="badge bg-warning text-capitalize fsz-14 fw-light">FAQ's
+              </p>
+              <h2 class="text-capitalize fw-medium fsz-h1 text-center ">frequently</h2>
+            </div>
+            <p class="tx-gray-700 mt-4 lh-lg text-center ">
+              The under-mentioned reasons can justify the need of outsourcing medical billing operations to scale
+              up your practice
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5 ">
+      <div class="row">
+
+        <div class="col-lg-9 mx-auto">
+          <div class="accordion border-0" id="accordionExample">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="u-accrodion-btn text-capitalize text-start tx-gray-900 fsz-16 fw-bold d-flex justify-content-between w-100 border-0 border-top p-4 bg-transparent"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                do we sell your data to third party
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body tx-gray-800 fsz-14 pt-0">
+                It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="u-accrodion-btn text-capitalize text-start tx-gray-900 fsz-16 fw-bold d-flex justify-content-between w-100 border-0 border-top p-4 bg-transparent collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                how to transit after before
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body tx-gray-800 fsz-14 pt-0">
+                It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="u-accrodion-btn text-capitalize text-start tx-gray-900 fsz-16 fw-bold d-flex justify-content-between w-100 border-0 border-top p-4 bg-transparent collapsed"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                what we don't do
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body tx-gray-800 fsz-14 pt-0">
+                It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the
+                overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer bgd-gray-200 py-5 border-top ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <img src="./assets/images/logo.png" alt="Logo">
+          <ul class="list-unstyled mt-5">
+            <li class="mb-3 w-75 d-flex gap-3">
+              <span>
+                <i class="fa fa-map tx-gray-700 fsz-14"></i>
+              </span>
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">
+                324 E 9th St, Brooklyn, NY 11218, United States
+              </a>
+            </li>
+            <li class="mb-3 w-75 d-flex gap-3">
+              <span>
+                <i class="fa fa-phone tx-gray-700 fsz-14"></i>
+              </span>
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">
+                347-650-2656
+              </a>
+            </li>
+            <li class="mb-3 w-75 d-flex gap-3">
+              <span>
+                <i class="fa fa-envelope tx-gray-700 fsz-14"></i>
+              </span>
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">
+                info@primedocbilling.com
+              </a>
+            </li>
+            <li class="mb-3 w-75 d-flex gap-3">
+              <span>
+                <i class="fa fa-message tx-gray-700 fsz-14"></i>
+              </span>
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">
+                Chat with us
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="fsz-16 tx-gray-700 text-uppercase fw-bold">
+            services
+          </h4>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">medical billing & coding</a>
+            </li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">RCM
+                services</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">credentialing</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">practice management</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">AR
+                follow up & danial management</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">scribing</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">prior
+                authorizations</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">verification of benefits</a>
+            </li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">website development</a></li>
+            <li class="mb-2 w-75"><a href="#"
+                class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">virtual assistant</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="fsz-16 tx-gray-700 text-uppercase fw-bold">
+            about us
+          </h4>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-2 w-75">
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">mission / vision</a>
+            </li>
+            <li class="mb-2 w-75">
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">core
+                values
+              </a>
+            </li>
+            <li class="mb-2 w-75">
+              <a href="#" class="text-decoration-none fw-light tx-gray-700 fsz-14 text-capitalize">company profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="fsz-16 tx-gray-700 text-uppercase fw-bold">
+            Quick Links
+          </h4>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- External Scripts -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>

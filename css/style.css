@@ -33,19 +33,54 @@
 
 body {
   font-family: "Poppins", sans-serif;
-}
-.header {
-  height: 200px;
+  overflow-x: hidden;
 }
 .header__main {
   width: 100%;
   top: 0;
   z-index: 10;
 }
+img {
+  max-width: 100%;
+}
 
-/* Typography */
+.mobile-navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateX(-110%);
+}
+.u-trans-none {
+  transform: translateX(0);
+}
+
+.mobile-navigation__close {
+  position: fixed;
+  right: 32px;
+  top: 16px;
+  z-index: 100;
+  color: #fff !important;
+  font-size: 32px;
+  font-weight: 300;
+}
 
 /* Components */
+.search-form-container {
+  position: relative;
+}
+.expanded {
+  width: 180px !important;
+}
+.search-form {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  float: right;
+}
 .u-bg-primary {
   background-color: #1d1662;
 }
@@ -71,6 +106,13 @@ body {
   outline: none;
   box-shadow: none;
   border: none;
+}
+.btn-readmore {
+  transition: transform 0.5s;
+  display: inline-block;
+}
+.btn-readmore:hover {
+  transform: translateX(10px);
 }
 .offer-card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -224,6 +266,7 @@ body {
 /* Loader */
 .loader-container {
   z-index: 100;
+  top: 0;
 }
 .loader {
   transform: rotateZ(45deg);
@@ -298,3 +341,24 @@ body {
   }
 }
 /* Loader Ends */
+.u-accrodion-btn {
+  transition: all 0.4s;
+}
+.u-accrodion-btn::after {
+  content: url("../assets/images/icon_collapsed.png");
+}
+.u-accrodion-btn.collapsed::after {
+  content: url("../assets/images/icon_collapse.png");
+}
+
+@media (max-width: 767px) {
+  :root {
+    --font-size-heading-1: 26px;
+  }
+  .header__main {
+    position: fixed;
+  }
+  .u-btn {
+    padding: 12px 8px;
+  }
+}
