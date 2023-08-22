@@ -53,63 +53,63 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  let isWideScreen = $(window).width() > 991;
+  // let isWideScreen = $(window).width() > 991;
 
-  function updateSidebarPosition() {
-    // Get references to the elements
-    const $sidebar = $(".sidebar-content");
-    const $blogContent = $(".blog-card");
+  // function updateSidebarPosition() {
+  //   // Get references to the elements
+  //   const $sidebar = $(".sidebar-content");
+  //   const $blogContent = $(".blog-card");
 
-    // Calculate the position where the sidebar should start scrolling
-    const startPosition = $blogContent.offset().top;
-    const bottomPosition = $blogContent.offset().bottom;
+  //   // Calculate the position where the sidebar should start scrolling
+  //   const startPosition = $blogContent.offset().top;
+  //   const bottomPosition = $blogContent.offset().bottom;
 
-    // Listen for the 'scroll' event on the window
-    $(window).scroll(function () {
-      const scrollY = $(window).scrollTop();
+  //   // Listen for the 'scroll' event on the window
+  //   $(window).scroll(function () {
+  //     const scrollY = $(window).scrollTop();
 
-      // Calculate the distance between the bottom of the blog content and the bottom of the viewport
-      const contentBottomPosition =
-        $blogContent.offset().top + $blogContent.outerHeight();
-      const viewportBottomPosition = scrollY + $(window).height();
-      const distanceToViewport =
-        contentBottomPosition - viewportBottomPosition;
+  //     // Calculate the distance between the bottom of the blog content and the bottom of the viewport
+  //     const contentBottomPosition =
+  //       $blogContent.offset().top + $blogContent.outerHeight();
+  //     const viewportBottomPosition = scrollY + $(window).height();
+  //     const distanceToViewport =
+  //       contentBottomPosition - viewportBottomPosition;
 
-      if (scrollY <= startPosition && isWideScreen) {
-        $sidebar.css({
-          position: "fixed",
-          top: `${startPosition + 48}px`,
-        });
-      } else if (distanceToViewport <= 0 && isWideScreen) {
-        $sidebar.css({
-          position: "relative",
-          top: "initial",
-          transition: "all .6s ease",
-        });
-      }
-    });
-  }
+  //     if (scrollY <= startPosition && isWideScreen) {
+  //       $sidebar.css({
+  //         position: "fixed",
+  //         top: `${startPosition + 48}px`,
+  //       });
+  //     } else if (distanceToViewport <= 0 && isWideScreen) {
+  //       $sidebar.css({
+  //         position: "relative",
+  //         top: "initial",
+  //         transition: "all .6s ease",
+  //       });
+  //     }
+  //   });
+  // }
 
   // Initial setup
-  updateSidebarPosition();
+  // updateSidebarPosition();
 
   // Handle resizing
-  $(window).resize(function () {
-    const newScreenWidth = $(window).width();
-    if (isWideScreen && newScreenWidth <= 991) {
-      // Screen has become narrow, reset sidebar position
-      isWideScreen = false;
-      $(".sidebar-content").css({
-        position: "static",
-        top: "initial",
-        transition: "none",
-      });
-    } else if (!isWideScreen && newScreenWidth > 991) {
-      // Screen has become wide, update sidebar position
-      isWideScreen = true;
-      updateSidebarPosition();
-    }
-  });
+  // $(window).resize(function () {
+  //   const newScreenWidth = $(window).width();
+  //   if (isWideScreen && newScreenWidth <= 991) {
+  //     // Screen has become narrow, reset sidebar position
+  //     isWideScreen = false;
+  //     $(".sidebar-content").css({
+  //       position: "static",
+  //       top: "initial",
+  //       transition: "none",
+  //     });
+  //   } else if (!isWideScreen && newScreenWidth > 991) {
+  //     // Screen has become wide, update sidebar position
+  //     isWideScreen = true;
+  //     updateSidebarPosition();
+  //   }
+  // });
 });
 
 // Utils
