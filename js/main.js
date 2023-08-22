@@ -78,7 +78,7 @@ $(document).ready(function () {
       if (scrollY <= startPosition && isWideScreen) {
         $sidebar.css({
           position: "fixed",
-          top: `${startPosition}px`,
+          top: `${startPosition + 48}px`,
         });
       } else if (distanceToViewport <= 0 && isWideScreen) {
         $sidebar.css({
