@@ -428,6 +428,7 @@ a:hover {
 /* Add styles for the sidebar */
 .sidebar-content {
   transition: top 0.3s ease; /* Add a smooth transition effect */
+  overflow-y: auto;
 }
 
 .single-blog__content {
