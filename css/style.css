@@ -41,6 +41,7 @@ body {
 }
 .header__main {
   width: 100%;
+  position: sticky;
   top: 0;
   z-index: 10;
 }
@@ -83,11 +84,22 @@ a:hover {
 .expanded {
   width: 180px !important;
 }
-.search-form {
-  width: 0;
+.search-form--desktop {
   overflow: hidden;
-  transition: width 0.3s ease;
-  float: right;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  background-color: #130e40;
+  color: #fff !important;
+}
+.search-form-toggle {
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: all;
 }
 .u-bg-primary {
   background-color: #1d1662;
@@ -103,6 +115,10 @@ a:hover {
   gap: 10px;
   text-transform: capitalize;
   border: none;
+  transition: transform 0.3s;
+}
+.u-btn:hover {
+  transform: translateX(10px);
 }
 .u-btn-primary {
   background: #1d1662;
@@ -121,7 +137,10 @@ a:hover {
 .btn-readmore {
   transition: transform 0.5s;
   display: inline-block;
+  border: none;
+  outline: none;
 }
+
 .btn-readmore:hover {
   transform: translateX(10px);
 }
@@ -367,7 +386,7 @@ a:hover {
     --font-size-heading-1: 26px;
   }
   .header__main {
-    position: fixed;
+    /* position: fixed; */
   }
   .u-btn {
     padding: 12px 8px;
@@ -465,6 +484,9 @@ a:hover {
 .custom-dropdown__menu .dropdown-item {
   padding: 8px 12px;
 }
+.custom-dropdown__menu .dropdown-item:active {
+  background-color: #e9ecef;
+}
 .search-form-icon {
   cursor: pointer;
 }
@@ -491,4 +513,71 @@ a:hover {
 }
 .read-more--blog > img {
   filter: brightness(10);
+}
+.recent-blog:hover .recent-blog__title {
+  text-decoration: underline;
+}
+.recent-blogs {
+  border-left: 1px solid orange;
+  padding-left: 16px;
+}
+.u-mxw-220 {
+  max-width: 220px;
+}
+.home-logo {
+  max-width: 140px;
+}
+
+/* Demo Form */
+.demo-form {
+  background: #fff;
+  padding: 32px;
+}
+#analysisModal .modal-content,
+#demoModal .modal-content {
+  border-radius: 0;
+}
+
+.demo-form__title {
+  color: #033f73;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.demo-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.demo-form__input {
+  border-radius: 0;
+}
+
+.demo-form__input::placeholder {
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.demo-form__policy {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 767px) {
+  .home-logo {
+    max-width: 80px;
+  }
 }

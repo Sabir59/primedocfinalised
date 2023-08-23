@@ -48,33 +48,28 @@ $(document).ready(function () {
     $(".mobile-navigation").removeClass("u-trans-none");
   });
   $(".search-form-icon").on("click", function () {
-    $(".search-form").toggleClass("expanded");
+    $(".search-form--desktop").toggleClass("search-form-toggle");
   });
 });
 
 $(document).ready(function () {
   // let isWideScreen = $(window).width() > 991;
-
   // function updateSidebarPosition() {
   //   // Get references to the elements
   //   const $sidebar = $(".sidebar-content");
   //   const $blogContent = $(".blog-card");
-
   //   // Calculate the position where the sidebar should start scrolling
   //   const startPosition = $blogContent.offset().top;
   //   const bottomPosition = $blogContent.offset().bottom;
-
   //   // Listen for the 'scroll' event on the window
   //   $(window).scroll(function () {
   //     const scrollY = $(window).scrollTop();
-
   //     // Calculate the distance between the bottom of the blog content and the bottom of the viewport
   //     const contentBottomPosition =
   //       $blogContent.offset().top + $blogContent.outerHeight();
   //     const viewportBottomPosition = scrollY + $(window).height();
   //     const distanceToViewport =
   //       contentBottomPosition - viewportBottomPosition;
-
   //     if (scrollY <= startPosition && isWideScreen) {
   //       $sidebar.css({
   //         position: "fixed",
@@ -89,10 +84,8 @@ $(document).ready(function () {
   //     }
   //   });
   // }
-
   // Initial setup
   // updateSidebarPosition();
-
   // Handle resizing
   // $(window).resize(function () {
   //   const newScreenWidth = $(window).width();
